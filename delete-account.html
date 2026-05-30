@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Account & Data — Star Saviors</title>
+<style>
+  :root{--bg:#120a28;--card:#1c1140;--accent:#5fe1f0;--gold:#f5cd5a;--text:#e9e9f2;--muted:#a9a9c4;}
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(160deg,#1a0c30,#0a0a20);color:var(--text);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       line-height:1.65;padding:0 16px}
+  .wrap{max-width:780px;margin:0 auto;padding:48px 0 80px}
+  h1{color:#fff;font-size:1.9rem;margin:.2em 0 .1em}
+  h2{color:var(--accent);margin-top:1.8em;font-size:1.2rem;border-bottom:1px solid #2e2a55;padding-bottom:.3em}
+  .badge{display:inline-block;background:var(--card);border:1px solid #2e2a55;border-radius:999px;
+         padding:4px 14px;color:var(--muted);font-size:.85rem;margin-bottom:1.2em}
+  a{color:var(--accent)}
+  table{border-collapse:collapse;width:100%;margin:1em 0;background:var(--card);border-radius:10px;overflow:hidden}
+  th,td{text-align:left;padding:10px 14px;border-bottom:1px solid #2e2a55;font-size:.95rem}
+  th{color:var(--gold)}
+  ol,ul{padding-left:1.3em}
+  li{margin:.4em 0}
+  code{background:#2a2150;color:#cfe9ff;padding:2px 7px;border-radius:6px;font-size:.9em}
+  .step{background:var(--card);border:1px solid #2e2a55;border-radius:12px;padding:18px 22px;margin:1em 0}
+  .foot{margin-top:3em;color:var(--muted);font-size:.9rem;border-top:1px solid #2e2a55;padding-top:1.2em}
+  strong{color:#fff}
+  .mail{font-size:1.1rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🗑️ Delete Your Account & Data — Star Saviors</h1>
+  <span class="badge">Last updated: 2026-05-30</span>
+  <p><strong>App:</strong> Star Saviors: Cosmic Quest &nbsp;·&nbsp; <strong>Developer:</strong> Komiljon Zokirov</p>
+  <p>This page explains how to request deletion of your Star Saviors account and the
+     data associated with it. You created an account by signing in with Google or
+     Google Play Games; this lets your game progress sync to the cloud.</p>
+
+  <h2>Option 1 — Request by email (available now)</h2>
+  <div class="step">
+    <p>Send an email to:</p>
+    <p class="mail">📧 <strong><a href="mailto:komzak080@gmail.com?subject=Delete%20my%20Star%20Saviors%20account">komzak080@gmail.com</a></strong></p>
+    <p>In the email, include:</p>
+    <ol>
+      <li><strong>Subject:</strong> "Delete my Star Saviors account"</li>
+      <li>The <strong>Google account email</strong> you signed in with (so we can locate your data)</li>
+    </ol>
+    <p>We will delete your account and associated cloud data within <strong>30 days</strong>
+       and reply to confirm.</p>
+  </div>
+
+  <h2>Option 2 — In-app (Settings → Delete Account)</h2>
+  <p>From inside the game: open <strong>Settings → Sign Out → Delete Account</strong>.
+     This removes your cloud-saved data immediately.
+     <em>(If this option is not yet available in your installed version, please use
+     Option 1 above — it is updated in a future release.)</em></p>
+
+  <h2>What gets deleted</h2>
+  <table>
+    <tr><th>Data</th><th>Action</th><th>Retention</th></tr>
+    <tr><td>Cloud game progress (levels, stars, coins, achievements)</td><td><strong>Deleted</strong></td><td>Within 30 days</td></tr>
+    <tr><td>Account record (Google account user ID) in Firestore</td><td><strong>Deleted</strong></td><td>Within 30 days</td></tr>
+    <tr><td>Anonymous crash logs / diagnostics (Crashlytics)</td><td>Retained then auto-deleted</td><td>Up to 90 days (Google policy)</td></tr>
+    <tr><td>On-device local save data</td><td>Removed by uninstalling the app</td><td>Immediate on uninstall</td></tr>
+  </table>
+
+  <h2>Delete data without deleting your account</h2>
+  <p>If you want to erase your cloud progress but keep the ability to sign in again,
+     mention that in your email (Option 1). We will wipe your saved data while keeping
+     your account record empty.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <strong><a href="mailto:komzak080@gmail.com">komzak080@gmail.com</a></strong><br>
+     See also our <a href="./index.html">Privacy Policy</a>.</p>
+
+  <div class="foot">Komiljon Zokirov · Tashkent, Uzbekistan</div>
+</div>
+</body>
+</html>
