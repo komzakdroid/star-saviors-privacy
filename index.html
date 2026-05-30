@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Star Saviors</title>
+<style>
+  :root{--bg:#120a28;--card:#1c1140;--accent:#5fe1f0;--gold:#f5cd5a;--text:#e9e9f2;--muted:#a9a9c4;}
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(160deg,#1a0c30,#0a0a20);color:var(--text);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       line-height:1.65;padding:0 16px}
+  .wrap{max-width:780px;margin:0 auto;padding:48px 0 80px}
+  h1{color:#fff;font-size:2rem;margin:.2em 0 .1em}
+  h2{color:var(--accent);margin-top:2em;font-size:1.25rem;border-bottom:1px solid #2e2a55;padding-bottom:.3em}
+  h3{color:var(--gold);font-size:1.02rem;margin-top:1.4em}
+  .badge{display:inline-block;background:var(--card);border:1px solid #2e2a55;border-radius:999px;
+         padding:4px 14px;color:var(--muted);font-size:.85rem;margin-bottom:1.2em}
+  a{color:var(--accent)}
+  table{border-collapse:collapse;width:100%;margin:1em 0;background:var(--card);border-radius:10px;overflow:hidden}
+  th,td{text-align:left;padding:10px 14px;border-bottom:1px solid #2e2a55;font-size:.95rem}
+  th{color:var(--gold)}
+  code{background:#2a2150;color:#cfe9ff;padding:2px 7px;border-radius:6px;font-size:.9em}
+  ul{padding-left:1.2em}
+  .foot{margin-top:3em;color:var(--muted);font-size:.9rem;border-top:1px solid #2e2a55;padding-top:1.2em}
+  strong{color:#fff}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>⭐ Privacy Policy — Star Saviors</h1>
+  <span class="badge">Last updated: 2026-05-25</span>
+  <p>Star Saviors ("the App", "we", "us") is a free single-player platformer game developed by
+     Komiljon Zokirov. This policy explains what personal data the App collects, how it is used,
+     and how you can control it.</p>
+
+  <h2>1. Data We Collect</h2>
+  <h3>1.1 Locally on your device</h3>
+  <p>The App stores the following on your device using AES-256 encrypted local storage
+     (Android Keystore-bound key):</p>
+  <ul>
+    <li>Game progress (levels cleared, stars earned, coins, achievements)</li>
+    <li>Settings (language, music/SFX volume, vibration toggle)</li>
+    <li>Selected hero + cosmetic unlocks</li>
+    <li>Daily quest progress</li>
+    <li>Recorded ghost replays</li>
+  </ul>
+  <p>This data <strong>never leaves your device</strong> unless you choose to sign in (see §1.2).</p>
+
+  <h3>1.2 With your consent — cloud sync</h3>
+  <p>If you tap <strong>Sign in with Google</strong> or <strong>Sign in with Play Games</strong>,
+     the App connects to Firebase (Google) and stores the same game progress data above in your
+     private Firestore document, keyed by your Google account UID. This enables progress to follow
+     you to other devices.</p>
+  <p>You can sign out at any time from Settings → Sign Out. After sign-out, the App returns to
+     local-only mode.</p>
+
+  <h3>1.3 Anonymous crash reports</h3>
+  <p>Firebase Crashlytics receives an <strong>anonymized</strong> stack trace + device model +
+     Android version when the App crashes. No personally identifying information (account, email,
+     IP) is sent. You can disable crash reporting in Settings → Diagnostics.</p>
+
+  <h2>2. What We Do NOT Collect</h2>
+  <ul>
+    <li>We do <strong>not</strong> collect your name, email, phone number, or address.</li>
+    <li>We do <strong>not</strong> show advertisements.</li>
+    <li>We do <strong>not</strong> include third-party advertising or analytics SDKs beyond
+        Firebase Analytics (anonymous events: levels played, sessions).</li>
+    <li>We do <strong>not</strong> access your contacts, photos, microphone, camera, location,
+        or files outside the App's own storage.</li>
+  </ul>
+
+  <h2>3. Permissions Used</h2>
+  <table>
+    <tr><th>Permission</th><th>Why</th></tr>
+    <tr><td><code>INTERNET</code></td><td>Firebase cloud sync (only when signed in) + crash reports</td></tr>
+    <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Detect offline mode to skip sync attempts</td></tr>
+    <tr><td><code>VIBRATE</code></td><td>Haptic feedback for jumps, hits (toggleable in Settings)</td></tr>
+  </table>
+  <p>No other permissions are requested.</p>
+
+  <h2>4. Children's Privacy</h2>
+  <p>Star Saviors is suitable for ages 6+ (PEGI 3 / ESRB E). We follow Google Play's Families policy:</p>
+  <ul>
+    <li>No advertising</li><li>No location tracking</li>
+    <li>No in-app purchases</li><li>No social features (no chat, no public profile)</li>
+  </ul>
+
+  <h2>5. Your Rights</h2>
+  <ul>
+    <li><strong>Access / export</strong>: contact us to receive a copy of your Firestore document.</li>
+    <li><strong>Delete</strong>: Settings → Sign Out → Delete Account. This removes your Firestore
+        document. Local data can be wiped by uninstalling the App.</li>
+    <li><strong>Withdraw consent</strong>: sign out at any time. The App fully works offline.</li>
+  </ul>
+
+  <h2>6. Data Retention</h2>
+  <p>Firestore documents are kept indefinitely unless you delete them via the in-app option in §5.
+     Anonymous crash reports are kept for 90 days by Firebase Crashlytics (Google policy).</p>
+
+  <h2>7. Third-Party Services</h2>
+  <ul>
+    <li><strong>Google Firebase</strong> — Authentication, Firestore, Crashlytics, Analytics.
+        Subject to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+    <li><strong>Google Play Games Services</strong> — Sign-in + achievements sync. Subject to
+        Google's Play Games policy.</li>
+  </ul>
+
+  <h2>8. Changes</h2>
+  <p>If we update this policy, we'll bump "Last updated" at the top and (for material changes)
+     show an in-app banner on the next launch.</p>
+
+  <h2>9. Contact</h2>
+  <p>For privacy questions or requests:<br>
+     <strong><a href="mailto:komzak080@gmail.com">komzak080@gmail.com</a></strong></p>
+
+  <div class="foot">
+    Komiljon Zokirov · Tashkent, Uzbekistan
+  </div>
+</div>
+</body>
+</html>
